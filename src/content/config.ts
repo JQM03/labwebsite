@@ -35,7 +35,7 @@ const publicationsCollection = defineCollection({
 const newsCollection = defineCollection({
   schema: z.object({
     title: z.string(), // 新闻标题
-    date: z.string(), // 日期（格式：YYYY-MM-DD）
+    date: z.date(), // 日期（格式：YYYY-MM-DD）
     image: z.string(), // 新闻配图路径
     link: z.string().optional(), // 详情链接（可选）
   }),
