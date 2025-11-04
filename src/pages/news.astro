@@ -1,0 +1,46 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const news = await getCollection('news', ({ data }) => {
+  // 按日期倒序排序
+  return true;
+}).then(items => items.sort((a, b) => new Date(b.data.date) - new Date(a.data.date)));
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新闻动态 - XX课题组</title>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <Navbar />
+  <section class="pt-28 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold mb-8">新闻动态</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {
+          news.map(item => (
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <img src={item.data.image} alt={item.data.title} class="w-full h-48 object-cover" />
+              <div class="p-6">
+                <p class="text-gray-400 text-sm mb-2">{new Date(item.data.date).toLocaleDateString()}</p>
+                <h3 class="text-xl font-semibold mb-3">{item.data.title}</h3>
+                <p class="text-gray-600 mb-4">{item.body}</p>
+                {item.data.link && (
+                  <a href={item.data.link} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline text-sm">
+                    查看详情 →
+                  </a>
+                )}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <Footer />
+</body>
+</html>

@@ -1,0 +1,47 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于我们 - XX课题组</title>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <Navbar />
+  <section class="pt-28 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold mb-8">关于我们</h1>
+      <div class="bg-white rounded-lg shadow-sm p-8">
+        <h2 class="text-2xl font-semibold mb-4">课题组简介</h2>
+        <p class="text-gray-600 mb-6">
+          XX课题组成立于20XX年，依托XX大学XX学院XX实验室，是一支以中青年教师为核心、硕博研究生为骨干的创新型科研团队。
+          课题组聚焦人工智能与医疗健康、机器学习优化等前沿交叉领域，致力于通过技术创新解决实际问题，推动学术进步与产业应用。
+        </p>
+        <p class="text-gray-600 mb-6">
+          成立以来，课题组承担国家自然科学基金、省部级科研项目等XX项，在 IEEE TMI、NeurIPS、ICML 等顶级期刊和会议发表论文XX篇，
+          申请发明专利XX项，部分成果已成功转化应用，获得行业广泛认可。
+        </p>
+
+        <h2 class="text-2xl font-semibold mb-4 mt-8">依托单位</h2>
+        <p class="text-gray-600 mb-4">
+          XX大学是国家“双一流”建设高校，XX学院拥有一级学科博士点、博士后流动站，
+          实验室配备先进的计算设备和医疗影像数据平台，为课题组的科研工作提供坚实保障。
+        </p>
+        <img src="/images/lab/university-photo.jpg" alt="学校/学院照片" class="rounded-lg shadow-sm w-full h-auto my-6" />
+
+        <h2 class="text-2xl font-semibold mb-4 mt-8">团队使命</h2>
+        <ul class="list-disc list-inside text-gray-600 space-y-2">
+          <li>深耕前沿领域，产出具有国际影响力的学术成果</li>
+          <li>培养兼具科研能力与工程素养的复合型人才</li>
+          <li>推动科研成果转化，服务国家战略与社会需求</li>
+          <li>构建开放合作的科研生态，与国内外顶尖团队深度协作</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <Footer />
+</body>
+</html>

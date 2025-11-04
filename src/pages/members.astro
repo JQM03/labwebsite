@@ -1,0 +1,66 @@
+---
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+// 读取 members 目录下的所有 Markdown 文件
+const members = await getCollection('members', ({ data }) => {
+  // 按 role 排序（导师在前，学生在后）
+  return data.role === 'teacher' || data.role === 'student';
+});
+const teachers = members.filter(m => m.data.role === 'teacher');
+const students = members.filter(m => m.data.role === 'student');
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>成员介绍 - XX课题组</title>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <Navbar />
+  <section class="pt-28 pb-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold mb-8">成员介绍</h1>
+
+      <!-- 导师团队 -->
+      <h2 class="text-2xl font-semibold mb-6">导师团队</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        {
+          teachers.map(member => (
+            <div class="bg-white rounded-lg shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+              <img src={member.data.avatar} alt={member.data.name} class="w-full h-64 object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold mb-1">{member.data.name}</h3>
+                <p class="text-primary mb-3">{member.data.title}</p>
+                <p class="text-gray-600 mb-4 text-sm">研究方向：{member.data.research}</p>
+                <p class="text-gray-500 text-sm mb-4">{member.body}</p>
+                <a href={`mailto:${member.data.email}`} class="text-sm text-primary hover:underline">
+                  {member.data.email}
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      <!-- 学生团队 -->
+      <h2 class="text-2xl font-semibold mb-6">学生团队</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {
+          students.map(member => (
+            <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+              <img src={member.data.avatar} alt={member.data.name} class="w-full h-48 object-cover rounded-md mb-4" />
+              <h3 class="text-lg font-semibold mb-1">{member.data.name}</h3>
+              <p class="text-gray-500 mb-2 text-sm">{member.data.title}</p>
+              <p class="text-gray-600 text-sm">研究方向：{member.data.research}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <Footer />
+</body>
+</html>
