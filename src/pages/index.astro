@@ -8,102 +8,238 @@ import Footer from '../components/Footer.astro';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MADFORWATER课题组 - 首页</title>
-  <meta name="description" content="MADFORWATER课题组专注于XX领域研究，依托南京大学，致力于XX方向的创新与突破">
+  <meta name="description" content="MADFORWATER课题组专注于AI+医疗影像、机器学习优化领域的研究与创新，依托XX大学，致力于技术突破与应用">
+  <!-- 添加平滑滚动 -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="font-sans text-gray-800 bg-gray-50">
+<body class="font-sans text-dark bg-light">
   <Navbar />
   <!-- 英雄区 -->
-  <section class="pt-28 pb-16 bg-gradient-to-r from-primary/5 to-primary/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-8 md:mb-0">
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            欢迎来到 <span class="text-primary">MADFORWATER课题组</span>
+  <section class="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-primary/5 via-white to-secondary/5 overflow-hidden relative">
+    <!-- 背景装饰元素 -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-secondary/10 rounded-full blur-3xl"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 animate-slide-up">
+          <div class="mb-3 inline-block bg-primary/10 px-3 py-1 rounded-full">
+            <span class="text-primary font-medium text-sm">AI驱动医疗创新</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight">
+            欢迎来到 <span class="text-primary">MADFORWATER</span><br>
+            前沿AI研究课题组
           </h1>
-          <p class="text-xl text-gray-600 mb-6">
-            专注于 <span class="font-semibold">AI+医疗影像</span>、<span class="font-semibold">机器学习优化</span> 领域的研究与创新
+          <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+            专注于 <span class="font-semibold text-primary">AI+医疗影像</span>、<span class="font-semibold text-primary">机器学习优化</span> 领域的研究与创新
           </p>
-          <p class="text-gray-500 mb-8">
+          <p class="text-gray-600 mb-8 leading-relaxed max-w-xl">
             依托XX大学XX学院，我们致力于通过技术突破解决实际问题，培养顶尖科研人才，产出高水平学术成果。
           </p>
-          <div class="flex space-x-4">
-            <a href="/about" class="px-6 py-3 bg-primary text-white rounded-md hover:bg-primary/90 transition-colors">
+          <div class="flex flex-wrap gap-4">
+            <a href="/about" class="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
               了解更多
             </a>
-            <a href="/contact" class="px-6 py-3 bg-white border border-primary text-primary rounded-md hover:bg-primary/5 transition-colors">
+            <a href="/contact" class="px-8 py-4 bg-white border border-primary text-primary rounded-lg hover:bg-primary/5 transition-all duration-300 transform hover:-translate-y-1">
               联系我们
             </a>
           </div>
         </div>
-        <div class="md:w-1/2">
-          <img src="/images/lab/lab-photo.jpg" alt="实验室照片" class="rounded-lg shadow-lg w-full h-auto" />
+        <div class="md:w-1/2 animate-float">
+          <div class="relative">
+            <img 
+              src="/images/lab/lab-photo.jpg" 
+              alt="MADFORWATER实验室照片" 
+              class="rounded-xl shadow-elegant w-full h-auto object-cover" 
+              style="max-height: 500px;"
+            />
+            <!-- 装饰性边框 -->
+            <div class="absolute -bottom-6 -right-6 w-full h-full border-4 border-primary/20 rounded-xl -z-10"></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 核心研究方向 -->
-  <section class="py-16 bg-white">
+  <!-- 研究方向 -->
+  <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-bold text-center mb-12">核心研究方向</h2>
+      <div class="text-center mb-16">
+        <span class="inline-block text-primary font-medium mb-3">我们的专长</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">核心研究方向</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          我们在多个前沿AI领域开展深入研究，致力于推动技术创新与实际应用
+        </p>
+      </div>
+      
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <!-- 研究方向1 -->
+        <div class="group bg-white rounded-xl p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">AI 医疗影像分析</h3>
-          <p class="text-gray-600">基于深度学习的病灶检测、影像分割与诊断辅助系统，提升医疗诊断效率与准确性。</p>
+          <h3 class="text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300">AI 医疗影像分析</h3>
+          <p class="text-gray-600 leading-relaxed">基于深度学习的病灶检测、影像分割与诊断辅助系统，提升医疗诊断效率与准确性。</p>
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300">
+              了解更多
+              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        
+        <!-- 研究方向2 -->
+        <div class="group bg-white rounded-xl p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0 2 2 0 01-4 0zM15 20H9a2 2 0 01-2-2V6a2 2 0 012-2h6a2 2 0 012 2v12a2 2 0 01-2 2z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">机器学习优化</h3>
-          <p class="text-gray-600">研究神经网络结构搜索、模型压缩与加速技术，解决大规模模型部署的效率与成本问题。</p>
+          <h3 class="text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300">机器学习优化</h3>
+          <p class="text-gray-600 leading-relaxed">研究神经网络结构搜索、模型压缩与加速技术，解决大规模模型部署的效率与成本问题。</p>
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300">
+              了解更多
+              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
         </div>
-        <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-          <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
-            <svg class="h-6 w-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        
+        <!-- 研究方向3 -->
+        <div class="group bg-white rounded-xl p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-2">多模态数据融合</h3>
-          <p class="text-gray-600">融合文本、图像、传感器数据，构建跨模态智能分析模型，应用于精准医疗、智能监测等场景。</p>
+          <h3 class="text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300">多模态数据融合</h3>
+          <p class="text-gray-600 leading-relaxed">融合文本、图像、传感器数据，构建跨模态智能分析模型，应用于精准医疗、智能监测等场景。</p>
+          <div class="mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300">
+              了解更多
+              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- 最新成果预览 -->
-  <section class="py-16 bg-gray-50">
+  <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center mb-8">
-        <h2 class="text-3xl font-bold">最新研究成果</h2>
-        <a href="/publications" class="text-primary hover:underline">查看全部 →</a>
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-4">
+        <div>
+          <span class="inline-block text-primary font-medium mb-2">学术成就</span>
+          <h2 class="text-3xl font-bold text-dark">最新研究成果</h2>
+        </div>
+        <a href="/publications" class="px-6 py-3 bg-white border border-primary text-primary rounded-lg hover:bg-primary/5 transition-all duration-300 flex items-center">
+          查看全部
+          <svg class="w-4 h-4 ml-2 transition-transform duration-300 hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
       </div>
-      <div class="bg-white rounded-lg shadow-sm p-6">
-        <ul class="space-y-4">
-          <li class="border-b border-gray-100 pb-4">
-            <p class="font-semibold">《Deep Learning for Lung Nodule Detection in CT Images》</p>
-            <p class="text-gray-600 text-sm">IEEE Transactions on Medical Imaging, 2024 (SCI 一区，IF=11.0)</p>
-            <p class="text-gray-500 text-sm mt-1">作者：张三, 李四, 王五*（通讯作者）</p>
-          </li>
-          <li class="border-b border-gray-100 pb-4">
-            <p class="font-semibold">《Efficient Neural Network Compression via Knowledge Distillation》</p>
-            <p class="text-gray-600 text-sm">NeurIPS 2023 (CCF A类会议)</p>
-            <p class="text-gray-500 text-sm mt-1">作者：赵六, 张三, 王五*</p>
-          </li>
-          <li>
-            <p class="font-semibold">国家自然科学基金项目：基于多模态融合的早期癌症诊断关键技术研究（No. 62371000）</p>
-            <p class="text-gray-600 text-sm">资助金额：99999999亿元，2024-2027</p>
-            <p class="text-gray-500 text-sm mt-1">负责人：李文涛 教授</p>
-          </li>
-        </ul>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- 成果1 -->
+        <div class="bg-white rounded-xl shadow-card overflow-hidden transition-all duration-300 hover:shadow-elegant transform hover:-translate-y-1">
+          <div class="p-1 bg-primary"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-primary/10 text-primary text-xs font-semibold px-2.5 py-1 rounded-full">学术论文</span>
+              <span class="text-gray-400 text-sm">2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-dark hover:text-primary transition-colors duration-300">
+              <a href="#">Deep Learning for Lung Nodule Detection in CT Images</a>
+            </h3>
+            <p class="text-gray-600 text-sm mb-3">IEEE Transactions on Medical Imaging, 2024 (SCI 一区，IF=11.0)</p>
+            <p class="text-gray-500 text-sm">作者：张三, 李四, 王五*（通讯作者）</p>
+          </div>
+        </div>
+        
+        <!-- 成果2 -->
+        <div class="bg-white rounded-xl shadow-card overflow-hidden transition-all duration-300 hover:shadow-elegant transform hover:-translate-y-1">
+          <div class="p-1 bg-secondary"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-secondary/10 text-secondary text-xs font-semibold px-2.5 py-1 rounded-full">会议论文</span>
+              <span class="text-gray-400 text-sm">2023</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-dark hover:text-secondary transition-colors duration-300">
+              <a href="#">Efficient Neural Network Compression via Knowledge Distillation</a>
+            </h3>
+            <p class="text-gray-600 text-sm mb-3">NeurIPS 2023 (CCF A类会议)</p>
+            <p class="text-gray-500 text-sm">作者：赵六, 张三, 王五*</p>
+          </div>
+        </div>
+        
+        <!-- 成果3 -->
+        <div class="bg-white rounded-xl shadow-card overflow-hidden transition-all duration-300 hover:shadow-elegant transform hover:-translate-y-1">
+          <div class="p-1 bg-accent"></div>
+          <div class="p-6">
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-accent/10 text-accent text-xs font-semibold px-2.5 py-1 rounded-full">科研项目</span>
+              <span class="text-gray-400 text-sm">2024-2027</span>
+            </div>
+            <h3 class="font-bold text-lg mb-2 text-dark hover:text-accent transition-colors duration-300">
+              <a href="#">基于多模态融合的早期癌症诊断关键技术研究</a>
+            </h3>
+            <p class="text-gray-600 text-sm mb-3">国家自然科学基金项目 (No. 62371000)</p>
+            <p class="text-gray-500 text-sm">负责人：李文涛 教授 | 资助金额：99999999亿元</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 数据统计 -->
+  <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="p-6">
+          <div class="text-4xl font-bold mb-2">50+</div>
+          <div class="text-blue-100">学术论文</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold mb-2">10+</div>
+          <div class="text-blue-100">科研项目</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold mb-2">20+</div>
+          <div class="text-blue-100">团队成员</div>
+        </div>
+        <div class="p-6">
+          <div class="text-4xl font-bold mb-2">3</div>
+          <div class="text-blue-100">研究方向</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系邀请 -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="inline-block text-primary font-medium mb-3">加入我们</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">与我们一起探索AI前沿技术</h2>
+      <p class="text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+        我们诚邀优秀学者、工程师加入团队，共同致力于人工智能与医疗健康领域的创新研究
+      </p>
+      <a href="/contact" class="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg inline-block">
+        联系我们
+      </a>
     </div>
   </section>
 

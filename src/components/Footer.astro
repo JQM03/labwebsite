@@ -1,25 +1,68 @@
 ---
 ---
-<footer class="bg-gray-50 border-t border-gray-200">
-  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      <div class="mb-4 md:mb-0">
-        <p class="text-sm text-gray-500">© {new Date().getFullYear()} XX课题组 版权所有</p>
-        <p class="text-sm text-gray-400">依托单位：XX大学 XX学院 XX实验室</p>
+<footer class="bg-gradient-to-r from-primary to-secondary text-white pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <!-- 课题组信息 -->
+      <div class="space-y-4">
+        <div class="flex items-center">
+          <img 
+            class="h-12 w-auto rounded-lg shadow-lg" 
+            src="/images/logo/lab-logo.png" 
+            alt="MADFORWATER课题组 Logo" 
+          />
+          <span class="ml-3 text-2xl font-bold">MADFORWATER</span>
+        </div>
+        <p class="text-blue-100 leading-relaxed">
+          专注于AI+医疗影像、机器学习优化领域的研究与创新，依托XX大学XX学院，致力于通过技术突破解决实际问题。
+        </p>
       </div>
-      <div class="flex space-x-6">
-        <a href="mailto:lab-email@xxx.edu.cn" class="text-gray-400 hover:text-primary">
-          <span class="sr-only">邮箱</span>
-          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-        </a>
-        <a href="https://github.com/你的课题组仓库" class="text-gray-400 hover:text-primary">
-          <span class="sr-only">GitHub</span>
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
-          </svg>
-        </a>
+      
+      <!-- 快速链接 -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-white/90">快速链接</h3>
+        <ul class="space-y-3">
+          <li><a href="/" class="text-blue-100 hover:text-white transition-colors duration-300 flex items-center"><span class="inline-block w-1 h-1 bg-white rounded-full mr-2"></span>首页</a></li>
+          <li><a href="/about" class="text-blue-100 hover:text-white transition-colors duration-300 flex items-center"><span class="inline-block w-1 h-1 bg-white rounded-full mr-2"></span>关于我们</a></li>
+          <li><a href="/members" class="text-blue-100 hover:text-white transition-colors duration-300 flex items-center"><span class="inline-block w-1 h-1 bg-white rounded-full mr-2"></span>成员介绍</a></li>
+          <li><a href="/publications" class="text-blue-100 hover:text-white transition-colors duration-300 flex items-center"><span class="inline-block w-1 h-1 bg-white rounded-full mr-2"></span>研究成果</a></li>
+          <li><a href="/news" class="text-blue-100 hover:text-white transition-colors duration-300 flex items-center"><span class="inline-block w-1 h-1 bg-white rounded-full mr-2"></span>新闻动态</a></li>
+        </ul>
+      </div>
+      
+      <!-- 联系信息 -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4 text-white/90">联系我们</h3>
+        <div class="space-y-3">
+          <p class="text-blue-100">
+            <span class="font-medium block text-white/90">邮箱</span>
+            <a href="mailto:lab-email@xxx.edu.cn" class="hover:text-white transition-colors duration-300">lab-email@xxx.edu.cn</a>
+          </p>
+          
+          <div class="pt-4">
+            <div class="flex space-x-5">
+              <a href="mailto:lab-email@xxx.edu.cn" class="text-white/80 hover:text-white transition-all duration-300 transform hover:scale-110">
+                <span class="sr-only">邮箱</span>
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </a>
+              <a href="https://github.com/你的课题组仓库" class="text-white/80 hover:text-white transition-all duration-300 transform hover:scale-110">
+                <span class="sr-only">GitHub</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 pt-8 border-t border-white/10">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-white/70 text-sm">© {new Date().getFullYear()} MADFORWATER课题组 版权所有</p>
+        <p class="text-white/70 text-sm mt-2 md:mt-0">依托单位：XX大学 XX学院 XX实验室</p>
       </div>
     </div>
   </div>

@@ -1,23 +1,45 @@
 ---
 ---
-<nav class="bg-white shadow-md fixed w-full z-10">
+<nav class="fixed w-full z-50 transition-all duration-300 ease-in-out bg-white/95 backdrop-blur-sm shadow-card">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16">
+    <div class="flex justify-between h-20">
       <div class="flex items-center">
         <!-- Logo -->
-        <a href="/" class="flex-shrink-0 flex items-center">
-          <img class="h-8 w-auto" src="/images/logo/lab-logo.png" alt="课题组 Logo" />
-          <span class="ml-2 text-xl font-bold text-primary">XX课题组</span>
+        <a href="/" class="flex-shrink-0 flex items-center group transition-all duration-300">
+          <img 
+            class="h-10 w-auto transition-transform duration-500 group-hover:scale-105" 
+            src="/images/logo/lab-logo.png" 
+            alt="课题组 Logo" 
+          />
+          <span class="ml-3 text-2xl font-bold text-primary tracking-tight transition-all duration-300 group-hover:text-secondary">MADFORWATER</span>
         </a>
       </div>
       <!-- 导航链接 -->
-      <div class="flex items-center space-x-4">
-        <a href="/" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary">首页</a>
-        <a href="/about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary">关于我们</a>
-        <a href="/members" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary">成员介绍</a>
-        <a href="/publications" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary">研究成果</a>
-        <a href="/news" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary">新闻动态</a>
-        <a href="/contact" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary">联系方式</a>
+      <div class="flex items-center space-x-8">
+        <a href="/" class="px-3 py-2 relative text-sm font-medium text-dark hover:text-primary transition-colors duration-300">
+          首页
+          <span class="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="/about" class="px-3 py-2 relative text-sm font-medium text-dark hover:text-primary transition-colors duration-300 group">
+          关于我们
+          <span class="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="/members" class="px-3 py-2 relative text-sm font-medium text-dark hover:text-primary transition-colors duration-300 group">
+          成员介绍
+          <span class="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="/publications" class="px-3 py-2 relative text-sm font-medium text-dark hover:text-primary transition-colors duration-300 group">
+          研究成果
+          <span class="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="/news" class="px-3 py-2 relative text-sm font-medium text-dark hover:text-primary transition-colors duration-300 group">
+          新闻动态
+          <span class="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
+        <a href="/contact" class="px-3 py-2 relative text-sm font-medium text-dark hover:text-primary transition-colors duration-300 group">
+          联系方式
+          <span class="absolute inset-x-0 bottom-0 h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+        </a>
       </div>
     </div>
   </div>
