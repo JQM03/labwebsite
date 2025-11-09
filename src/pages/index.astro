@@ -193,142 +193,16 @@ import Footer from '../components/Footer.astro';
 
       <!-- 向下滚动指示器 -->
       <div class="mt-16 animate-bounce-gentle">
-        <button class="scroll-to-next group flex flex-col items-center text-primary/70 hover:text-primary transition-colors duration-300" aria-label="向下滚动">
+        <a href="#research" class="group flex flex-col items-center text-primary/70 hover:text-primary transition-colors duration-300" aria-label="向下滚动">
           <span class="text-sm font-medium mb-2 tracking-wide">探索更多</span>
           <svg class="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
-        </button>
+        </a>
       </div>
     </div>
 
-    <!-- 研究方向 -->
-    <div class="flex-1 py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden">
-      <!-- 装饰背景 -->
-      <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/1 to-secondary/1"></div>
-      <div class="absolute -top-20 -left-20 w-40 h-40 bg-primary/5 rounded-full blur-2xl parallax-bg"></div>
-      <div class="absolute -bottom-20 -right-20 w-60 h-60 bg-secondary/5 rounded-full blur-2xl parallax-bg"></div>
-
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center mb-20 animate-on-scroll">
-          <span class="inline-block text-primary font-semibold mb-4 px-4 py-2 bg-primary/10 rounded-full text-sm tracking-wide">我们的专长</span>
-          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">核心研究方向</h2>
-          <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
-            我们在水环境科学与技术领域开展前沿研究，致力于推动环境监测技术创新、水资源保护与可持续发展
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          <!-- 研究方向1 -->
-          <div class="group bg-white rounded-2xl p-8 transition-all duration-700 hover:shadow-premium transform hover:-translate-y-3 border border-gray-100/50 backdrop-blur-sm hover:border-primary/20 relative overflow-hidden animate-on-scroll">
-            <!-- 悬浮装饰 -->
-            <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-primary/5 to-transparent rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-700"></div>
-
-            <div class="relative z-10">
-              <div class="w-16 h-16 bg-gradient-to-br from-primary/15 to-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:from-primary group-hover:to-secondary group-hover:text-white transition-all duration-500 shadow-soft">
-                <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900 group-hover:text-primary transition-colors duration-300 leading-tight">天然有机质组分结构解析与环境行为效应研究</h3>
-              <p class="text-gray-600 leading-relaxed text-base mb-6">解析天然有机质分子结构与环境行为，探究其在水环境中的转化、迁移与生态效应。</p>
-              <div class="mt-6 pt-6 border-t border-gray-100/50">
-                <a href="/about" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition-all duration-300 text-sm group/link">
-                  <span>了解更多</span>
-                  <svg class="w-4 h-4 ml-2 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 研究方向2 -->
-          <div class="group bg-white rounded-2xl p-8 transition-all duration-700 hover:shadow-premium transform hover:-translate-y-3 border border-gray-100/50 backdrop-blur-sm hover:border-secondary/20 relative overflow-hidden animate-on-scroll delay-100">
-            <!-- 悬浮装饰 -->
-            <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-secondary/5 to-transparent rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-700"></div>
-
-            <div class="relative z-10">
-              <div class="w-16 h-16 bg-gradient-to-br from-secondary/15 to-secondary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:from-secondary group-hover:to-accent group-hover:text-white transition-all duration-500 shadow-soft">
-                <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900 group-hover:text-secondary transition-colors duration-300 leading-tight">面向水处理与水质分析需求的功能材料研制</h3>
-              <p class="text-gray-600 leading-relaxed text-base mb-6">开发新型功能材料，实现高效水处理与精准水质分析，满足环境监测与水资源保护需求。</p>
-              <div class="mt-6 pt-6 border-t border-gray-100/50">
-                <a href="/about" class="inline-flex items-center text-secondary font-semibold hover:text-accent transition-all duration-300 text-sm group/link">
-                  <span>了解更多</span>
-                  <svg class="w-4 h-4 ml-2 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 研究方向3 -->
-          <div class="group bg-white rounded-2xl p-8 transition-all duration-700 hover:shadow-premium transform hover:-translate-y-3 border border-gray-100/50 backdrop-blur-sm hover:border-accent/20 relative overflow-hidden animate-on-scroll delay-200">
-            <!-- 悬浮装饰 -->
-            <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-accent/5 to-transparent rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-700"></div>
-
-            <div class="relative z-10">
-              <div class="w-16 h-16 bg-gradient-to-br from-accent/15 to-accent/5 rounded-2xl flex items-center justify-center mb-6 group-hover:from-accent group-hover:to-primary group-hover:text-white transition-all duration-500 shadow-soft">
-                <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900 group-hover:text-accent transition-colors duration-300 leading-tight">基于光声电磁原理的高频微型水质监测传感器研制</h3>
-              <p class="text-gray-600 leading-relaxed text-base mb-6">基于光声电磁原理开发高灵敏度微型传感器，实现水质参数实时、高频监测与预警。</p>
-              <div class="mt-6 pt-6 border-t border-gray-100/50">
-                <a href="/about" class="inline-flex items-center text-accent font-semibold hover:text-primary transition-all duration-300 text-sm group/link">
-                  <span>了解更多</span>
-                  <svg class="w-4 h-4 ml-2 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- 研究方向4 -->
-          <div class="group bg-white rounded-2xl p-8 transition-all duration-700 hover:shadow-premium transform hover:-translate-y-3 border border-gray-100/50 backdrop-blur-sm hover:border-primary/20 relative overflow-hidden animate-on-scroll delay-300">
-            <!-- 悬浮装饰 -->
-            <div class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-primary/5 to-transparent rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-700"></div>
-
-            <div class="relative z-10">
-              <div class="w-16 h-16 bg-gradient-to-br from-primary/15 to-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:from-primary group-hover:to-secondary group-hover:text-white transition-all duration-500 shadow-soft">
-                <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              </div>
-              <h3 class="text-xl font-bold mb-4 text-gray-900 group-hover:text-primary transition-colors duration-300 leading-tight">色谱联用型/在线型有机碳和有机氮检测器研制</h3>
-              <p class="text-gray-600 leading-relaxed text-base mb-6">研制高精度有机碳氮检测器，实现水体中有机污染物快速、准确的在线监测与分析。</p>
-              <div class="mt-6 pt-6 border-t border-gray-100/50">
-                <a href="/about" class="inline-flex items-center text-primary font-semibold hover:text-secondary transition-all duration-300 text-sm group/link">
-                  <span>了解更多</span>
-                  <svg class="w-4 h-4 ml-2 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 向下滚动指示器 -->
-        <div class="mt-16 text-center animate-on-scroll delay-400">
-          <button class="scroll-to-next group flex flex-col items-center text-primary/70 hover:text-primary transition-colors duration-300 mx-auto" aria-label="继续探索">
-            <span class="text-sm font-medium mb-2 tracking-wide">继续探索</span>
-            <svg class="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden">
+  <section id="research" class="py-24 bg-gradient-to-b from-white to-gray-50/50 relative overflow-hidden">
     <!-- 装饰背景 -->
     <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-primary/1 to-secondary/1"></div>
     <div class="absolute -top-20 -left-20 w-40 h-40 bg-primary/5 rounded-full blur-2xl"></div>

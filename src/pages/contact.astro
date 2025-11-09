@@ -60,16 +60,27 @@ import Footer from '../components/Footer.astro';
           </div>
           <div class="md:w-1/2">
             <h2 class="text-2xl font-semibold mb-6">地理位置</h2>
-            <!-- 替换为你的实验室地图嵌入代码（来自百度地图/高德地图） -->
-            <div class="rounded-lg overflow-hidden shadow-sm h-80 bg-gray-100">
-              <iframe 
-                src="https://map.baidu.com/xxx"  <!-- 替换为实际地图链接 -->
-                width="100%" 
-                height="100%" 
-                frameborder="0" 
-                allowfullscreen="true"
-                loading="lazy"
-              ></iframe>
+            <!-- 南京大学环境学院地图 -->
+            <div class="rounded-lg overflow-hidden shadow-sm bg-gray-100">
+              <img
+                src="/images/location_map.png"
+                alt="南京大学环境学院位置地图"
+                class="w-full h-auto object-cover"
+              />
+              <div class="p-4 bg-white">
+                <a
+                  href="https://surl.amap.com/hBoj8iNV0Cx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-300 text-sm font-medium"
+                >
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                  在地图中查看
+                </a>
+              </div>
             </div>
             <div class="mt-6">
               <img src="/images/logo/wechat-qrcode.jpg" alt="微信公众号二维码" class="w-48 h-auto rounded-md" />
