@@ -15,10 +15,10 @@ const membersCollection = defineCollection({
 // 成果集合配置
 const publicationsCollection = defineCollection({
   schema: z.object({
-    title: z.string(), // 标题（论文名/项目名/专利名）
-    type: z.enum(['paper', 'project', 'patent']), // 类型
+    title: z.string(), // 标题（论文名/项目名/专利名/专著名/获奖名）
+    type: z.enum(['paper', 'project', 'patent', 'book', 'award']), // 类型
     year: z.number(), // 发表/立项年份
-    authors: z.string().optional(), // 作者/发明人（论文/专利）
+    authors: z.string().optional(), // 作者/发明人（论文/专利/专著）
     journal: z.string().optional(), // 期刊/会议（论文）
     level: z.string().optional(), // 级别（如 SCI 一区、CCF A类）
     doi: z.string().optional(), // DOI（论文）
@@ -28,6 +28,8 @@ const publicationsCollection = defineCollection({
     leader: z.string().optional(), // 负责人（项目）
     number: z.string().optional(), // 专利号（专利）
     date: z.string().optional(), // 授权日期（专利）
+    category: z.string().optional(), // 分类（主持/参与项目，荣誉等级等）
+    description: z.string().optional(), // 详细描述
   }),
 });
 

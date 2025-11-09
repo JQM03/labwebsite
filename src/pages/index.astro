@@ -8,7 +8,7 @@ import Footer from '../components/Footer.astro';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MADFORWATER课题组 - 首页</title>
-  <meta name="description" content="MADFORWATER课题组专注于AI+医疗影像、机器学习优化领域的研究与创新，依托XX大学，致力于技术突破与应用">
+  <meta name="description" content="MADFORWATER课题组专注于水环境科学与技术领域的研究与创新，依托南京大学，致力于水质监测与环境分析技术突破">
   <!-- 添加平滑滚动 -->
   <style>
     html {
@@ -28,17 +28,17 @@ import Footer from '../components/Footer.astro';
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="md:w-1/2 animate-slide-up">
           <div class="mb-3 inline-block bg-primary/10 px-3 py-1 rounded-full">
-            <span class="text-primary font-medium text-sm">AI驱动医疗创新</span>
+            <span class="text-primary font-medium text-sm">水环境科技创新</span>
           </div>
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight">
             欢迎来到 <span class="text-primary">MADFORWATER</span><br>
-            前沿AI研究课题组
+            水环境科学课题组
           </h1>
           <p class="text-xl text-gray-700 mb-8 leading-relaxed">
-            专注于 <span class="font-semibold text-primary">AI+医疗影像</span>、<span class="font-semibold text-primary">机器学习优化</span> 领域的研究与创新
+            专注于 <span class="font-semibold text-primary">水质监测</span>、<span class="font-semibold text-primary">环境分析</span> 领域的研究与创新
           </p>
           <p class="text-gray-600 mb-8 leading-relaxed max-w-xl">
-            依托XX大学XX学院，我们致力于通过技术突破解决实际问题，培养顶尖科研人才，产出高水平学术成果。
+            依托南京大学环境学院，我们致力于通过技术突破解决实际问题，培养顶尖科研人才，产出高水平学术成果。
           </p>
           <div class="flex flex-wrap gap-4">
             <a href="/about" class="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
@@ -72,62 +72,81 @@ import Footer from '../components/Footer.astro';
         <span class="inline-block text-primary font-medium mb-3">我们的专长</span>
         <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">核心研究方向</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          我们在多个前沿AI领域开展深入研究，致力于推动技术创新与实际应用
+          我们在水环境科学与技术领域开展深入研究，致力于推动环境监测技术创新与水资源保护
         </p>
       </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         <!-- 研究方向1 -->
-        <div class="group bg-white rounded-xl p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
-          <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-            <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <div class="group bg-white rounded-xl p-6 lg:p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 lg:mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-6 w-6 lg:h-8 lg:w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300">AI 医疗影像分析</h3>
-          <p class="text-gray-600 leading-relaxed">基于深度学习的病灶检测、影像分割与诊断辅助系统，提升医疗诊断效率与准确性。</p>
-          <div class="mt-6 pt-4 border-t border-gray-100">
-            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300">
+          <h3 class="text-lg lg:text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300 leading-tight">天然有机质组分结构解析与环境行为效应研究</h3>
+          <p class="text-gray-600 leading-relaxed text-sm lg:text-base">解析天然有机质分子结构与环境行为，探究其在水环境中的转化、迁移与生态效应。</p>
+          <div class="mt-4 lg:mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300 text-sm">
               了解更多
-              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-3 h-3 lg:w-4 lg:h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
           </div>
         </div>
-        
+
         <!-- 研究方向2 -->
-        <div class="group bg-white rounded-xl p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
-          <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-            <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0 2 2 0 01-4 0zM15 20H9a2 2 0 01-2-2V6a2 2 0 012-2h6a2 2 0 012 2v12a2 2 0 01-2 2z" />
+        <div class="group bg-white rounded-xl p-6 lg:p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 lg:mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-6 w-6 lg:h-8 lg:w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300">机器学习优化</h3>
-          <p class="text-gray-600 leading-relaxed">研究神经网络结构搜索、模型压缩与加速技术，解决大规模模型部署的效率与成本问题。</p>
-          <div class="mt-6 pt-4 border-t border-gray-100">
-            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300">
+          <h3 class="text-lg lg:text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300 leading-tight">面向水处理与水质分析需求的功能材料研制</h3>
+          <p class="text-gray-600 leading-relaxed text-sm lg:text-base">开发新型功能材料，实现高效水处理与精准水质分析，满足环境监测与水资源保护需求。</p>
+          <div class="mt-4 lg:mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300 text-sm">
               了解更多
-              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-3 h-3 lg:w-4 lg:h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
           </div>
         </div>
-        
+
         <!-- 研究方向3 -->
-        <div class="group bg-white rounded-xl p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
-          <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-            <svg class="h-8 w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+        <div class="group bg-white rounded-xl p-6 lg:p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 lg:mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-6 w-6 lg:h-8 lg:w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
             </svg>
           </div>
-          <h3 class="text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300">多模态数据融合</h3>
-          <p class="text-gray-600 leading-relaxed">融合文本、图像、传感器数据，构建跨模态智能分析模型，应用于精准医疗、智能监测等场景。</p>
-          <div class="mt-6 pt-4 border-t border-gray-100">
-            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300">
+          <h3 class="text-lg lg:text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300 leading-tight">基于光声电磁原理的高频微型水质监测传感器研制</h3>
+          <p class="text-gray-600 leading-relaxed text-sm lg:text-base">基于光声电磁原理开发高灵敏度微型传感器，实现水质参数实时、高频监测与预警。</p>
+          <div class="mt-4 lg:mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300 text-sm">
               了解更多
-              <svg class="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-3 h-3 lg:w-4 lg:h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 研究方向4 -->
+        <div class="group bg-white rounded-xl p-6 lg:p-8 transition-all duration-500 hover:shadow-elegant transform hover:-translate-y-2 border border-gray-100">
+          <div class="w-12 h-12 lg:w-16 lg:h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 lg:mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+            <svg class="h-6 w-6 lg:h-8 lg:w-8 text-primary group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg lg:text-xl font-semibold mb-3 text-dark group-hover:text-primary transition-colors duration-300 leading-tight">色谱联用型/在线型有机碳和有机氮检测器研制</h3>
+          <p class="text-gray-600 leading-relaxed text-sm lg:text-base">研制高精度有机碳氮检测器，实现水体中有机污染物快速、准确的在线监测与分析。</p>
+          <div class="mt-4 lg:mt-6 pt-4 border-t border-gray-100">
+            <a href="/about" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors duration-300 text-sm">
+              了解更多
+              <svg class="w-3 h-3 lg:w-4 lg:h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
@@ -163,9 +182,9 @@ import Footer from '../components/Footer.astro';
               <span class="text-gray-400 text-sm">2024</span>
             </div>
             <h3 class="font-bold text-lg mb-2 text-dark hover:text-primary transition-colors duration-300">
-              <a href="#">Deep Learning for Lung Nodule Detection in CT Images</a>
+              <a href="#">Molecular Characterization of Natural Organic Matter in Drinking Water Sources</a>
             </h3>
-            <p class="text-gray-600 text-sm mb-3">IEEE Transactions on Medical Imaging, 2024 (SCI 一区，IF=11.0)</p>
+            <p class="text-gray-600 text-sm mb-3">Environmental Science & Technology, 2024 (SCI 一区，IF=9.2)</p>
             <p class="text-gray-500 text-sm">作者：张三, 李四, 王五*（通讯作者）</p>
           </div>
         </div>
@@ -179,9 +198,9 @@ import Footer from '../components/Footer.astro';
               <span class="text-gray-400 text-sm">2023</span>
             </div>
             <h3 class="font-bold text-lg mb-2 text-dark hover:text-secondary transition-colors duration-300">
-              <a href="#">Efficient Neural Network Compression via Knowledge Distillation</a>
+              <a href="#">Development of Photoacoustic Sensor for Real-time Water Quality Monitoring</a>
             </h3>
-            <p class="text-gray-600 text-sm mb-3">NeurIPS 2023 (CCF A类会议)</p>
+            <p class="text-gray-600 text-sm mb-3">Analytical Chemistry, 2023 (SCI 一区，IF=6.8)</p>
             <p class="text-gray-500 text-sm">作者：赵六, 张三, 王五*</p>
           </div>
         </div>
@@ -195,10 +214,10 @@ import Footer from '../components/Footer.astro';
               <span class="text-gray-400 text-sm">2024-2027</span>
             </div>
             <h3 class="font-bold text-lg mb-2 text-dark hover:text-accent transition-colors duration-300">
-              <a href="#">基于多模态融合的早期癌症诊断关键技术研究</a>
+              <a href="#">基于光声原理的高灵敏水质监测传感器的研制</a>
             </h3>
-            <p class="text-gray-600 text-sm mb-3">国家自然科学基金项目 (No. 62371000)</p>
-            <p class="text-gray-500 text-sm">负责人：李文涛 教授 | 资助金额：99999999亿元</p>
+            <p class="text-gray-600 text-sm mb-3">国家自然科学基金青年基金项目 (No. 52200033)</p>
+            <p class="text-gray-500 text-sm">负责人：李文涛 副教授 | 资助金额：30万元</p>
           </div>
         </div>
       </div>
@@ -222,7 +241,7 @@ import Footer from '../components/Footer.astro';
           <div class="text-blue-100">团队成员</div>
         </div>
         <div class="p-6">
-          <div class="text-4xl font-bold mb-2">3</div>
+          <div class="text-4xl font-bold mb-2">4</div>
           <div class="text-blue-100">研究方向</div>
         </div>
       </div>
@@ -233,9 +252,9 @@ import Footer from '../components/Footer.astro';
   <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <span class="inline-block text-primary font-medium mb-3">加入我们</span>
-      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">与我们一起探索AI前沿技术</h2>
+      <h2 class="text-3xl md:text-4xl font-bold text-dark mb-6">与我们一起守护水环境安全</h2>
       <p class="text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-        我们诚邀优秀学者、工程师加入团队，共同致力于人工智能与医疗健康领域的创新研究
+        我们诚邀优秀学者、工程师加入团队，共同致力于水环境科学与技术领域的创新研究
       </p>
       <a href="/contact" class="px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg inline-block">
         联系我们

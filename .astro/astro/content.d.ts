@@ -173,9 +173,254 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "publications": {
+"award-2018.md": {
+	id: "award-2018.md";
+  slug: "award-2018";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"award-2019.md": {
+	id: "award-2019.md";
+  slug: "award-2019";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"award-2021.md": {
+	id: "award-2021.md";
+  slug: "award-2021";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"award-students.md": {
+	id: "award-students.md";
+  slug: "award-students";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"book-1.md": {
+	id: "book-1.md";
+  slug: "book-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"book-2.md": {
+	id: "book-2.md";
+  slug: "book-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"book-3.md": {
+	id: "book-3.md";
+  slug: "book-3";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"book-4.md": {
+	id: "book-4.md";
+  slug: "book-4";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"book-5.md": {
+	id: "book-5.md";
+  slug: "book-5";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2013.md": {
+	id: "paper-2013.md";
+  slug: "paper-2013";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2014.md": {
+	id: "paper-2014.md";
+  slug: "paper-2014";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2016-1.md": {
+	id: "paper-2016-1.md";
+  slug: "paper-2016-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2016-2.md": {
+	id: "paper-2016-2.md";
+  slug: "paper-2016-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2017-1.md": {
+	id: "paper-2017-1.md";
+  slug: "paper-2017-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2018.md": {
+	id: "paper-2018.md";
+  slug: "paper-2018";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2019.md": {
+	id: "paper-2019.md";
+  slug: "paper-2019";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2023-1.md": {
+	id: "paper-2023-1.md";
+  slug: "paper-2023-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"paper-2023-2.md": {
+	id: "paper-2023-2.md";
+  slug: "paper-2023-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
 "paper-2024.md": {
 	id: "paper-2024.md";
   slug: "paper-2024";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2017-1.md": {
+	id: "patent-2017-1.md";
+  slug: "patent-2017-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2017-2.md": {
+	id: "patent-2017-2.md";
+  slug: "patent-2017-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2018-1.md": {
+	id: "patent-2018-1.md";
+  slug: "patent-2018-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2019-1.md": {
+	id: "patent-2019-1.md";
+  slug: "patent-2019-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2021-1.md": {
+	id: "patent-2021-1.md";
+  slug: "patent-2021-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2021-2.md": {
+	id: "patent-2021-2.md";
+  slug: "patent-2021-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2023-1.md": {
+	id: "patent-2023-1.md";
+  slug: "patent-2023-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2024-1.md": {
+	id: "patent-2024-1.md";
+  slug: "patent-2024-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"patent-2024-2.md": {
+	id: "patent-2024-2.md";
+  slug: "patent-2024-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-2021-1.md": {
+	id: "project-2021-1.md";
+  slug: "project-2021-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-2022-1.md": {
+	id: "project-2022-1.md";
+  slug: "project-2022-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-2024-u35.md": {
+	id: "project-2024-u35.md";
+  slug: "project-2024-u35";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-participate-2016.md": {
+	id: "project-participate-2016.md";
+  slug: "project-participate-2016";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-participate-2018-1.md": {
+	id: "project-participate-2018-1.md";
+  slug: "project-participate-2018-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-participate-2018-2.md": {
+	id: "project-participate-2018-2.md";
+  slug: "project-participate-2018-2";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-participate-2020-1.md": {
+	id: "project-participate-2020-1.md";
+  slug: "project-participate-2020-1";
+  body: string;
+  collection: "publications";
+  data: InferEntrySchema<"publications">
+} & { render(): Render[".md"] };
+"project-participate-2024-major.md": {
+	id: "project-participate-2024-major.md";
+  slug: "project-participate-2024-major";
   body: string;
   collection: "publications";
   data: InferEntrySchema<"publications">

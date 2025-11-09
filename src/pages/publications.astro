@@ -8,17 +8,19 @@ const publications = await getCollection('publications', ({ data }) => {
   return true;
 }).then(items => items.sort((a, b) => b.data.year - a.data.year));
 
-// 分类：论文、项目、专利
+// 分类：论文、项目、专利、专著、荣誉
 const papers = publications.filter(p => p.data.type === 'paper');
 const projects = publications.filter(p => p.data.type === 'project');
 const patents = publications.filter(p => p.data.type === 'patent');
+const books = publications.filter(p => p.data.type === 'book');
+const awards = publications.filter(p => p.data.type === 'award');
 ---
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>研究成果 - XX课题组</title>
+  <title>研究成果 - MADFORWATER课题组</title>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
   <Navbar />
@@ -78,7 +80,7 @@ const patents = publications.filter(p => p.data.type === 'patent');
       </div>
 
       <!-- 发明专利 -->
-      <div class="bg-white rounded-lg shadow-sm p-8">
+      <div class="bg-white rounded-lg shadow-sm p-8 mb-10">
         <h2 class="text-2xl font-semibold mb-6 flex items-center">
           <svg class="h-6 w-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -92,6 +94,48 @@ const patents = publications.filter(p => p.data.type === 'patent');
                 <h3 class="text-lg font-semibold mb-2">{patent.data.title}</h3>
                 <p class="text-gray-600 mb-2">专利号：{patent.data.number} | 授权日期：{patent.data.date}</p>
                 <p class="text-gray-500">发明人：{patent.data.inventors}</p>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- 学术专著/标准 -->
+      <div class="bg-white rounded-lg shadow-sm p-8 mb-10">
+        <h2 class="text-2xl font-semibold mb-6 flex items-center">
+          <svg class="h-6 w-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          学术专著/标准
+        </h2>
+        <div class="space-y-6">
+          {
+            books.map(book => (
+              <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                <h3 class="text-lg font-semibold mb-2">{book.data.title}</h3>
+                <p class="text-gray-600 mb-2">{book.data.description || book.data.level}</p>
+                {book.data.authors && <p class="text-gray-500">参编人：{book.data.authors}</p>}
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- 荣誉奖励 -->
+      <div class="bg-white rounded-lg shadow-sm p-8">
+        <h2 class="text-2xl font-semibold mb-6 flex items-center">
+          <svg class="h-6 w-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+          荣誉奖励
+        </h2>
+        <div class="space-y-6">
+          {
+            awards.map(award => (
+              <div class="border-b border-gray-100 pb-6 last:border-0 last:pb-0">
+                <h3 class="text-lg font-semibold mb-2">{award.data.title}</h3>
+                <p class="text-gray-600 mb-2">{award.data.level} ({award.data.year})</p>
+                {award.data.description && <p class="text-gray-500">{award.data.description}</p>}
               </div>
             ))
           }
